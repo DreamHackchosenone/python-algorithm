@@ -1,16 +1,17 @@
 # coding:utf-8
-def insert_sort(lists, value):
+def insert_sort(list):
     # 插入排序
-    lists.append(value)
-    count = len(lists)
-    for i in range(1, count):
-        key = lists[i]
-        j = i - 1
+    for i in range(len(list)):
+        j = i
+        value = list[i]
+
         while j >= 0:
-            if lists[j] > key:
-                lists[j + 1] = lists[j]
-                lists[j] = key
+            if list[j] > value:
+                list[j + 1] = list[j]
+                list[j] = value
             j -= 1
-    print(lists)
-a = [1, 2, 5, 8, 9]
-insert_sort(a, 4)
+
+    print(list[::])
+
+a = [1, 2, 3, 10, 5, 9]
+insert_sort(a)
