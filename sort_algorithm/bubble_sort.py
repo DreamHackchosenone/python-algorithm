@@ -12,7 +12,7 @@ def bubble_sort(test_list):
             if test_list[i] > test_list[j]:
                 test_list[i], test_list[j] = test_list[j], test_list[i]
             j += 1
-    print(test_list[::])
+    return test_list
 
 
 a = [1, 4, 5, 3]
