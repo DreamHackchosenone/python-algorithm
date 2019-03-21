@@ -12,7 +12,7 @@ class TreeNode(object):
 
 
 def preorder_traverse(tree):
-    # 遍历顺序：根->左->右
+    # 递归遍历顺序：根->左->右
     if tree is None:
         return
     print(tree.root)
@@ -21,7 +21,7 @@ def preorder_traverse(tree):
 
 
 def inorder_traverse(tree):
-    # 遍历顺序：左->根->右
+    # 递归遍历顺序：左->根->右
     if tree is None:
         return
     inorder_traverse(tree.left)
@@ -30,7 +30,7 @@ def inorder_traverse(tree):
 
 
 def postorder_treverse(tree):
-    # 遍历顺序：左->右->根
+    # 递归遍历顺序：左->右->根
     if tree is None:
         return
     postorder_treverse(tree.left)
